@@ -1,0 +1,9 @@
+@if(estadoDiario){
+  @for(entrada of entradas; track entrada.fecha){<!-- por cada una de las entradas del diario pongo un componente pagina -->
+    <app-pagina [entrada] = "entrada"></app-pagina>
+  }
+}@else{
+  <p>Lo siento el diario esta cerrado</p>
+}
+
+<input type="button" value="Abrir/Cerrar diario fran" (click)="abrirCerrarDiario()">
