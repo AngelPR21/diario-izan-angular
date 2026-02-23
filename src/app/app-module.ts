@@ -6,13 +6,16 @@ import { App } from './app';
 import { Principal } from './principal/principal';
 import { Diario } from './diario/diario';
 import {Pagina} from './pagina/pagina';
+import { IniciarSesion } from './iniciar-sesion/iniciar-sesion';
+import { Credencial } from "./credencial";
 
 @NgModule({
   declarations: [
     App,
     Principal,
     Diario,
-    Pagina
+    Pagina,
+    IniciarSesion
   ],
   imports: [
     BrowserModule,
