@@ -1,5 +1,6 @@
 <label for="">Usuario</label>
-<input type="text" name="" id="" #usuario>
+{{nombreUsuario}} <!--banana in the box-->
+<input type="text" name="" id="" #usuario [(ngModel)]="nombreUsuario"> <!--banana in the box-->
 <label for="">contraseña</label>
-<input type="text" name="" id="" #contrasenya> <!--template variable-->
+<input type="text" name="" id="" #contrasenya> <!--template variable, recoje lo introducido en esa variable-->
 <input type="button" value="iniciar sesion" (click)="iniciarSesion(usuario.value, contrasenya.value)">

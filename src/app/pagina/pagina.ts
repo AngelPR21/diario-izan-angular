@@ -10,4 +10,7 @@ import {paginaDiario} from '../paginaDiario';
 export class Pagina {
 @Input() entrada: paginaDiario; //el objeto que hemos creado por separado, obtenemnos variable entrada de tipo paginaDiario
 
+    devolverClase(){
+      return this.entrada.mood.toLowerCase();
+    }
 }

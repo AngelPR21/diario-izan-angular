@@ -8,7 +8,7 @@ import {Credencial} from '../credencial';
   styleUrl: './iniciar-sesion.css',
 })
 export class IniciarSesion {
-
+  nombreUsuario: string;
   constructor(private credenciales : Credencial){}
   //pillamos el service para comprobar que los datos que pasamos por iniciar sesion son correctos
 

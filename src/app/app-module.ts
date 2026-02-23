@@ -8,6 +8,7 @@ import { Diario } from './diario/diario';
 import {Pagina} from './pagina/pagina';
 import { IniciarSesion } from './iniciar-sesion/iniciar-sesion';
 import { Credencial } from "./credencial";
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Credencial } from "./credencial";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
